@@ -1,10 +1,6 @@
 import Input from "../../shared/helper/io/input";
 import Output from "../../shared/helper/io/output";
 
-const rangeContains = (firstStart: number, secondStart: number, firstEnd: number, secondEnd: number) => {
-  return (firstStart >= secondStart && firstEnd <= secondEnd);
-}
-
 export default async function () {
 
   const input = (await new Input().setDelimiters('\n\n', '\n').readAs2dArray());
